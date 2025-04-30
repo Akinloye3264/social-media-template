@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.container{
+    display: grid;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: 100svh;
+    width:60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 12px;
+    grid-template-areas: 
+        "main_body main_body2 main_body2 main_body3"
+        "main_body main_body2 main_body2 main_body3"
+        "main_body main_body2 main_body2 main_body3"
+        "main_body main_body2 main_body2 main_body3"
+        "main_body main_body5 main_body6 main_body3"
+        "main_body4 main_body5 main_body6 main_body3"
+        "main_body4 main_body5 main_body6 main_body3"
+        "main_body4 main_body7 main_body8 main_body8"
+        "main_body4 main_body7 main_body8 main_body8"
+        "main_body4 main_body7 main_body8 main_body8"
+        ;
+    text-align: center;
+    
+}
+
+.main_body{
+    background-color: rgb(240, 216, 195);
+    font-weight: 100px;
+    grid-area: main_body;
+    border-radius: 10px;
+    
+}
+.main_body2{
+    background-color: rgb(160, 44, 255);      
+    grid-area: main_body2;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+h2{
+    color: white;
+}
+.main_body3{
+    background-color: rgb(208, 197, 230);
+    grid-area: main_body3;
+    font-weight: 500px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+.main_body3 h3{
+    font-weight: 200px;
+    font-family: sans-serif;
+}
+.main_body3 p{
+    font-family:  sans-serif;
+    font-size: 20px;
+}
+
+.main_body4{
+    background-color: gold;
+    grid-area: main_body4;
+    border-radius: 5px;
+}
+ .main_body4 h4{
+    font-size: 30px;
+ }
+
+.main_body5{
+    background-color: white;
+    grid-area: main_body5;
+    border-radius: 5px;
+}
+
+.main_body5 p{
+    font-size: 30px;
+}
+
+
+
+.main_body6{
+    background-color: gold;
+    grid-area: main_body6;
+}
+
+.main_body6 p{
+    font-size: 30px;
+}
+
+
+.main_body7{
+    grid-area: main_body7;
+    background-color: white;
+
+}
+.main_body7 h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.main_body8{
+    background-color: rgb(160, 44, 255);
+    grid-area: main_body8;
+    color: white;
+    display: grid;                     
+    grid-template-columns: 1fr 1fr;    
+    align-items: center;
+    justify-content: center; 
+    text-align: left;
+    border-radius: 10px;
+    padding: 40px;
+
+    
+}
+
+.main_body8 span{
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 7px;
+}
